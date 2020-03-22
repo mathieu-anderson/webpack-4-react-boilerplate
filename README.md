@@ -6,7 +6,7 @@ Forked from https://github.com/FerJSsilva/webpack-4-react-boilerplate, but remov
 * CSS loaders configured :art:
 * Hot reload configured :sunny:
 
-That's it. bring your own things!
+That's it. Bring your own things!
 
 ### Prerequisites
 
