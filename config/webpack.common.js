@@ -1,14 +1,14 @@
-const path = require('path');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, '../src', 'index.js')
+    main: path.resolve(__dirname, "../src", "index.js")
   },
   output: {
-    filename: '[name].[hash].js',
-    path: path.resolve(__dirname, '../dist'),
-    publicPath: '/'
+    filename: "[name].[hash].js",
+    path: path.resolve(__dirname, "../dist"),
+    publicPath: "/"
   },
   devServer: {
     port: 3042,
@@ -21,23 +21,23 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: [/node_modules/],
-        use: [{ loader: 'babel-loader' }]
+        use: [{ loader: "babel-loader" }]
       },
       // Vendor CSS loader
       // This is necessary to pack third party libraries like antd
       {
         test: /\.css$/,
-        include: path.resolve(__dirname, '../node_modules'),
-        use: ['style-loader', 'css-loader']
+        include: path.resolve(__dirname, "../node_modules"),
+        use: ["style-loader", "css-loader"]
       }
     ]
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: path.resolve(__dirname, '../public', 'index.html')
+      template: path.resolve(__dirname, "../public", "index.html")
     })
   ],
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: [".js", ".jsx"]
   }
 };
