@@ -35,12 +35,6 @@ You can generate an optimized distribution bundle. To do this run the command:
 yarn build
 ```
 
-It´s possible to check the size and content of your bundled file. To do this run the command:
-
-```CLI
-yarn analyze
-```
-
 That´s it! Remember to change the project information in package.json, README and LICENSE if necessary. :mortar_board:
 
 Give the project a star if you liked it. Happy Hacking! :sunglasses: :star:
