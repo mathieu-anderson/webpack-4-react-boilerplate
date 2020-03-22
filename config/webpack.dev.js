@@ -16,10 +16,6 @@ module.exports = merge(common, {
           { loader: "style-loader" },
           { loader: mapStyle ? "css-loader?sourceMap" : "css-loader" }
         ]
-      },
-      {
-        test: /\.s(a|c)ss$/,
-        use: [{ loader: "style-loader" }, { loader: "css-loader" }]
       }
     ]
   },
